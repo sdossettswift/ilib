@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'author/create'
+
+  get 'author/new'
+
+  get 'author/update'
+
+  get 'author/edit'
+
+  get 'author/delete'
+
+  get 'author/destroy'
+
+  get 'author/index'
+
   get 'welcome/index'
 
   root 'books#index'
