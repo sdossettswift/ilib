@@ -1,0 +1,20 @@
+<%= form_for @book do |f| %>
+  <div class="">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <div class="">
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+  </div>
+
+  <div class="">
+    <%= f.submit %>
+  </div>
+<% end %>

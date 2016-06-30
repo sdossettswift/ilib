@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   root 'books#index'
   get 'books/new' => 'books#new', as: :new_book
   get 'books/:id' => 'books#show', as: :book

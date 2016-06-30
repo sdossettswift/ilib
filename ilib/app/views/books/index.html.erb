@@ -1,0 +1,5 @@
+<% @books.each do |book| %>
+        <p>  <%= link_to book.title, book_path(id: book.id) %></p>      <p>  <%= image_tag book.photo_url %></p>
+        <p>  <%= book.author%></p>
+        <p>  <%= number_to_currency(book.price) %></p>
+  <% end %>
