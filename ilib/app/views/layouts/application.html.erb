@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <h1>The Iron Library</h1>
+  <%= link_to 'Add A Book', new_book_path %>
+  <%= link_to 'View All', root_path %>
 
 <%= yield %>
 
